@@ -1,0 +1,28 @@
+.new-tweet {
+  width: 100%
+}
+
+.transparent {
+  margin-top: 15px;
+  background-color: transparent;
+  border: transparent;
+  width: 100%;
+}
+
+.tweetButton {
+  margin-top: 15px;
+  font-family: "Bungee";
+  color: #FFFFFF;
+  background-color: #4056A1;
+}
+
+.letterCounter {
+  margin-top: 15px;
+  font-family: "Bungee";
+}
+
+.dividerLine {
+  border-top: 5px solid;
+  display: flex;
+  justify-content: space-between;
+}

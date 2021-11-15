@@ -1,0 +1,25 @@
+header {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: aqua;
+  color: #FFFFFF;
+  background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png"); 
+}
+
+.image {
+  height: 200px;
+  width: 200px;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+  height: 75%;
+  width: 75%;
+}

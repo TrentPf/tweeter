@@ -18,6 +18,15 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap', sans-serif;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: #f4f1ec;
 }
 
 /*
