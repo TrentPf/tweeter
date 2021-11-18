@@ -14,19 +14,15 @@ $(document).ready(function() {
     if (content.length === 0) { //no content in tweet, produce error
       $(".error").slideDown(400);
 
-    }
-    
-    else if (content.length > 140) { //too many characters, produce error
+    } else if (content.length > 140) { //too many characters, produce error
       $(".error").slideDown(400);
-    }
-
-    else if (content.length <= 140) { //If within allowed range, produce tweet, slide up error message if it's currently displayed
+    } else if (content.length <= 140) { //If within allowed range, produce tweet, slide up error message if it's currently displayed
       $(".error").slideUp(400);
       $.ajax({
         url: "/tweets",
         method: "POST",
         data: serialized,
-        success: function () { //on successful post request, use loadTweets
+        success: function() { //on successful post request, use loadTweets
           loadTweets();
         }
       });
@@ -37,9 +33,9 @@ $(document).ready(function() {
     $.ajax({
       url: "/tweets",
       method: "GET",
-      success: function (response) { // on successful get request, use renderTweets and...
+      success: function(response) { // on successful get request, use renderTweets and...
         $(".tweets").html(""); // ...Clear tweets before posting, so tweets aren't duplicated
-        renderTweets(response); 
+        renderTweets(response);
       }
     });
   };
@@ -54,7 +50,7 @@ $(document).ready(function() {
     const dateCreated = timeago.format(tweet.created_at); // timeago library to convert number into human-legible date of submission for tweet
 
     const footer = `<footer class="dividerLine paddingSides paddingBottom"><span class="dateFormat marginTop">${dateCreated}</span><span><i class="fas fa-flag blue iconFormat"></i><i class="fas fa-retweet blue iconFormat"></i><i class="fas fa-heart blue iconFormat"></i></span></footer>`;
-    const $tweet = $(`${article}${header}${body}${footer}</article>`); // structure of html, this and previous const until just before const safeText. 
+    const $tweet = $(`${article}${header}${body}${footer}</article>`); // structure of html, this and previous const until just before const safeText.
     return $tweet;
   };
 
