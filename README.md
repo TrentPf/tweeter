@@ -10,7 +10,11 @@ This repository is the starter code for the project: Students will fork and clon
  - Prevention of ineligible tweets being submitted, as well as relavent error messages. 
  - Defense against html tags in tweets: html is rendered useless before submission.
  - Accomodation for different devices. Webpage reconfigures based on device and resolution for optimal experience.
- 
+
+## Screenshots
+!["Screenshot of desktop configuration"](https://github.com/TrentPf/tweeter/blob/master/docs/tweeter-desktop_config.png?raw=true)
+!["Screenshot of mobile/tablet configuration"](https://github.com/TrentPf/tweeter/blob/master/docs/tweeter-mobile_tablet_config.png?raw=true)
+
 ## Getting Started
 
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
