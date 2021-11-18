@@ -1,28 +1,30 @@
+/*Classes for tweeter feed*/
 .new-tweet {
-  width: 100%
+  margin-bottom: 2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
-.transparent {
-  margin-top: 15px;
-  background-color: transparent;
-  border: transparent;
-  width: 100%;
-}
-
-.tweetButton {
-  margin-top: 15px;
-  font-family: "Bungee";
-  color: #FFFFFF;
-  background-color: #4056A1;
+.error {
+  width : 300px;
+  height : 55px;
+  background : crimson;
+  color: white;
+  text-align : center;
+  position : relative;
+  left : calc( 50% - 150px );
+  z-index : 3;
+  display : none;
 }
 
 .letterCounter {
-  margin-top: 15px;
+  margin-top: 0.6em;
   font-family: "Bungee";
 }
 
-.dividerLine {
-  border-top: 5px solid;
-  display: flex;
-  justify-content: space-between;
+.tweetButton {
+  margin-top: 0.66em;
+  font-family: "Bungee";
+  color: #FFFFFF;
+  background-color: #4056A1;
 }

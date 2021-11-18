@@ -1,0 +1,190 @@
+/*Classes used in multiple sections and media queries*/
+
+.tweetInset {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.transparent {
+  margin-top: 15px;
+  background-color: transparent;
+  border: transparent;
+  width: 100%;
+  resize: none;
+  outline: none;
+}
+
+.dividerLine {
+  border-top: 5px solid;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweets {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 250px;
+  width: 90% !important;
+  width: 250px;
+}
+
+.tweetHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  height: 4em;
+  padding-right: 1em;
+  padding-left: 1em;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
+.grey {
+  color: #545149;
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tweetProfile {
+  font-size: 2em;
+  margin-right: 0.5em;
+}
+
+.showBorder {
+  border: 3px solid;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.transparency {
+  opacity: 0.3;
+}
+
+.backgroundWhite {
+  background-color: #FFFFFF;
+}
+
+.paddingTop {
+  padding-top: 0.7em;
+}
+
+.marginTop {
+  margin-top: 1em;
+}
+
+.paddingBottom {
+  padding-bottom: 0.5em;
+}
+
+.paddingSides {
+  padding-right: 0.8em;
+  padding-left: 0.8em;
+}
+
+.dateFormat {
+  font-size: 16px
+}
+
+.iconFormat {
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  font-size: 16px
+}
+
+.iconFormat:hover {
+  color: goldenrod
+}
+
+.showBorder:hover {
+  box-shadow: 0.2em 0.2em 0px rgba(64, 86, 161, 0.2);
+}
+
+.blue {
+  color: #4056A1;
+}
+
+@media (min-width: 1025px) {
+  .container {
+    margin-top: 7em;
+    padding-right: 1em;
+    padding-left: 2em;
+    width: 50%;
+  }
+
+  .desktopVmobile {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .font {
+    padding-bottom: 25px;
+  }
+
+  .header {
+    margin: 2em;
+    margin-top: 7em;
+    height: 300px;
+    width: 50%;
+  }
+
+  .image {
+    height: 250px;
+    padding-bottom: 50px;
+  }
+
+  .profile {
+    padding-top: 175px;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav {
+    background-color: cyan;
+    background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+  }
+}
+
+@media (max-width: 700px) {
+  .new {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    font-size: max(4vw, 13.5px);
+  }
+
+  .dateFormat {
+    font-size: max(2.66vw, 9px);
+  }
+
+  .iconFormat {
+    font-size: max(2.66vw, 9px);
+  }
+
+  .tweetProfile {
+    width: 10.5vw;
+    height: 10.5vw;
+    min-width: 35px;
+    min-height: 35px;
+  }
+}
+
+@media (max-width: 420px) {
+  nav {
+    font-size: 1em;
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+    align-items: center;
+  }
+}

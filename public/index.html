@@ -15,52 +15,51 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tertiary.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
     
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <style>
-      .downArrow {
-        color: red;
-        display: flex;
-        justify-content: center;
-      }
-    </style>
+
   </head>
   <body>
     <!-- Top nav bar (fixed) -->
     <nav class="logotext">
       <span class="logo">TWEETER</span>
-      <span class="new">Write a new tweet<br><i class="fas fa-angle-double-down downArrow"></i></span>
+      <span class="new"><span><b>Write</b> a new tweet</span><i class="fas fa-angle-double-down downArrow"></i></span>
     </nav>
-
-    <header>
-      <div class="profile">
-          <img class="image" src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div>
-          <h2>Your Name</h2>
-      </div>
-    </header>
-  
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <form method="POST" action="/tweets">
-          <textarea class="transparent" name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-          <div class="dividerLine">
-            <button class="tweetButton" type="submit">Tweet</button>
-            <output name="counter" class="counter letterCounter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>      
-    </main>
+    <section class="desktopVmobile">
+      <header class="header">
+        <div class="profile">
+            <img class="image" src="/images/profile-hex.png"> 
+        </div>
+        <br>
+        <div>
+            <h2 class="font">Your Name</h2>
+        </div>
+      </header>
+    
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <section class="new-tweet">
+          <form id="tweetForm" method="POST" action="/tweets">
+            <textarea class="transparent" name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+            <p class="error">Error: please enter a valid tweet</p>
+            <div class="dividerLine">
+              <button class="tweetButton" type="submit">Tweet</button>
+              <output name="counter" class="counter letterCounter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
+        <section class="tweets"></section>      
+      </main>
+    </section>
   </body>
 </html>

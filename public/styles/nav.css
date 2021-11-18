@@ -1,3 +1,4 @@
+/*Classes for nav bar*/
 nav {
   position: fixed;
   display: flex;
@@ -11,9 +12,14 @@ nav {
   font-size: 2em;
 }
 
-.logo {
+.downArrow {
+  color: red;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  text-shadow: 0 0.1em 0.1em rgb(29, 29, 29);
+}
+
+.logo {
   padding-top: 1em;
 }
 
@@ -25,5 +31,7 @@ nav {
   font-family: "Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap";
   font-size: 0.75em;
   padding-top: 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-
